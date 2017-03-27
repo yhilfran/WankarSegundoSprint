@@ -1,0 +1,53 @@
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card col-md-6 col-md-offset-3 z-depth-2">
+                    <div class="card-block">
+                        <div class="text-center">
+                            <div class="form-header cyan accent-5">
+                                <h3><i class="fa fa-lock"></i> Inicio de Sesión</h3>
+                            </div>
+
+                        </div>
+                        <div *ngIf="errorMessage">
+                            <div class="alert alert-info">
+                                <strong>Error</strong> {{errorMessage}}
+                            </div>
+                        </div>
+                        <form #loginForm="ngForm" (ngSubmit)="login()">
+
+
+                            <div class="md-form">
+                                <span class="fa fa-user prefix"></span>
+                                <input type="text" #username="ngModel" class="form-control" [(ngModel)]="model.username" name="username" required>
+                                <!--<input type="text" id="usuario" class="form-control">-->
+                                <label for="usuario">Usuario</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" class="form-control" [(ngModel)]="model.password" name="password" required>
+                                <label for="contraseña">Contraseña</label>
+                            </div>
+                            <div class="text-center">
+                                <!--<button type="submit" routerLinkActive="active" [routerLink]="['/logeado/index2']" class="btn btn-success">Entrar</button>-->
+
+                                <button type="submit" routerLinkActive="active" class="btn btn-success">Entrar</button>
+                            </div>
+                            <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+                        </form>
+
+                        <div style="display: block;" class="modal-footer">
+                            <div class="text-center options crear-cuenta">
+                                <h1>¿No tiene cuenta?</h1>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px;" class="text-center">
+                            <h3><a routerLinkActive="active" [routerLink]="['/idioma']" class="cyan-text" href="#">Crear cuenta</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,47 @@
+<nav class="navbar navbar-toggleable-md navbar-fixed-top navbar-dark cyan">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+        <strong>Wankar</strong></a>
+        <div class="collapse navbar-collapse" id="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a routerLinkActive="active" [routerLink]="['/logeado/index2']" class="nav-link waves-effect waves-light"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light"><i class="fa fa-book"></i> Palabras</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <form class="form-inline waves-effect ml-auto waves-light">
+                    <div class="sm-form input-group">
+                        <input type="search" class="form-control" placeholder="Buscar...">
+                    </div>
+                </form>
+                <li class="nav-item">
+                    <i class="nav-link" >Tasnet</i>
+                </li>
+                <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="img-fluid rounded-circle z-depth-0"></a>
+                    <div class="dropdown-menu dropdown-info dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Perfil</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Help</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Salir</a>
+                    </div>
+                </li>
+            </ul>          
+        </div>
+    </div>
+</nav> 
+
+<router-outlet></router-outlet>
+
+<footer id="footer" class="abajo abajo2 page-footer center-on-small-only cyan ">
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            &copy; 2017 Copyright: <a href="#"> Wankar</a>
+        </div>
+    </div>
+</footer>

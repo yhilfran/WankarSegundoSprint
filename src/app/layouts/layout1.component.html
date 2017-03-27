@@ -1,0 +1,34 @@
+<nav class="navbar navbar-toggleable-md navbar-fixed-top navbar-dark cyan">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+        <strong>Wankar</strong></a>
+        <div class="collapse navbar-collapse" id="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a routerLinkActive="active" [routerLink]="['/error404']" class="nav-link waves-effect waves-light"><i class="fa fa-exclamatin-triangle"></i> Error404</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLinkActive="active" [routerLink]="['/error500']" class="nav-link waves-effect waves-light"><i class="fa fa-exclamatin-circle"></i> Error500</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a routerLinkActive="active" [routerLink]="['/login']" class="nav-link waves-effect waves-light"><i class="fa fa-arrow-circle-o-right"></i> Ingresar</a>
+                </li>
+            </ul>          
+        </div>
+    </div>
+</nav> 
+
+<router-outlet></router-outlet>
+
+<footer id="footer" class="abajo page-footer center-on-small-only cyan ">
+    <div class="footer-copyright">
+       <div class="container-fluid">
+            &copy; 2017 Copyright: <a href="#"> Wankar</a>
+       </div>
+    </div>
+</footer>
